@@ -1,6 +1,6 @@
 # Cloud_resume
 
-Part 1  Build a statis website on S3 1) Create HTML, CSS and javascript code for resume(Chatgpt) 2)Upload files to S3 3) Configure S3 for a static website with public access
+**Part 1** -- Build a statis website on S3 1) Create HTML, CSS and javascript code for resume(Chatgpt) 2)Upload files to S3 3) Configure S3 for a static website with public access
  
 - [ ] create S3 bucket
 - [ ] interms of naming the bucket it should match the domain name of the site 
@@ -11,26 +11,13 @@ Part 1  Build a statis website on S3 1) Create HTML, CSS and javascript cod
 
 This allows everyone to read/view everything in the bucket.  Be sure to update the Bucket-Name.
 
-{
-    "Version": "2012-10-17",
-    "Statement": [
-    	{
-        	"Sid": "PublicReadGetObject",
-        	"Effect": "Allow",
-        	"Principal": "*",
-        	"Action": [
-            	"s3:GetObject"
-        	],
-        	"Resource": [
-                "arn:aws:s3:::Bucket-Name/*"
-        	]
-    	}
-    ]
-}
+<img width="320" alt="image" src="https://github.com/Akash051198/Cloud_resume/assets/63510805/4718420c-514b-46ab-b21d-104f7670555c">
+
+Code snippet link: https://docs.google.com/document/d/1Y9Vjom6lbdKdfbw672FWGJ0WVO8gbemFUMsE72LqDac/edit
 
 
  
-Part 2  Make it work with a custom domain nae 1) Register a domain name with route 53 2) Update records to point to the s3 website endpoint
+**Part 2** -- Make it work with a custom domain nae 1) Register a domain name with route 53 2) Update records to point to the s3 website endpoint
 
 - [ ] Route53
 Create a hosted zone 
@@ -46,7 +33,7 @@ LinkedIn article if you need help using a domain name from an external provider 
 
 ￼
  
-Part 3 Incoporate Cloudfront & SSl/HTTPS 1)Setp SSL/HTTPS with Aws cert manager 2) Create a CLoudfront distribution
+**Part 3** -- Incoporate Cloudfront & SSl/HTTPS 1)Setp SSL/HTTPS with Aws cert manager 2) Create a CLoudfront distribution
 
 check for steps for DNS validation
 
